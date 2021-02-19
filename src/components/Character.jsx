@@ -7,6 +7,9 @@ export default function Character(props) {
         src={props.data.image}
         alt="imageCharacter"
       />
+      <button type="button" onClick={() => props.onClick(props.data)}>
+        Agregar a favoritos
+      </button>
     </div>
   );
 }
